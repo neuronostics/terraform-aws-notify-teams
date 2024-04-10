@@ -37,7 +37,7 @@ def lambda_handler(event, context):
     message = {
         "@context": "https://schema.org/extensions",
         "@type": "MessageCard",
-        "themeColor": data["colour"],
+        "themeColor": data["color"],
         "title": data["title"],
         "text": alarm_description + "\n" + data["text"],
     }
